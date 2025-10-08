@@ -1,0 +1,10 @@
+{
+  "name": "isdatingherokay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Divide by two plus seven relationship timeline explorer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
