@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Dating Her Okay? - Sign In</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script defer src="/landing.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Is Dating Her Okay?</h1>
+        <p>
+          Use the classic &ldquo;divide your age by 2 and add 7&rdquo; rule to explore
+          relationship timelines. Sign in with Google to begin.
+        </p>
+        <div id="signin-container">
+          <div
+            id="g_id_onload"
+            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="handleCredentialResponse"
+          ></div>
+          <div
+            class="g_id_signin"
+            data-type="standard"
+            data-shape="rectangular"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="large"
+          ></div>
+        </div>
+        <form id="profile-form" class="hidden">
+          <div class="field">
+            <label for="displayName">Display name</label>
+            <input type="text" id="displayName" name="displayName" required />
+          </div>
+          <div class="field">
+            <label for="birthdate">Your birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+          <button type="submit" class="primary">Continue</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

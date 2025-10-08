@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Dating Her Okay? - Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/utils.js"></script>
+    <script defer src="/dashboard.js"></script>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div>
+        <h1>Relationship Timeline</h1>
+        <p class="subtitle">Understand the divide-by-two-plus-seven guideline over time.</p>
+      </div>
+      <button id="signOut" class="secondary">Sign out</button>
+    </header>
+    <main class="dashboard">
+      <section class="panel">
+        <h2>Your profile</h2>
+        <div id="profileSummary" class="summary"></div>
+      </section>
+      <section class="panel">
+        <h2>Add a partner timeline</h2>
+        <form id="partnerForm" class="stack">
+          <div class="field">
+            <label for="partnerName">Partner name</label>
+            <input id="partnerName" name="partnerName" required />
+          </div>
+          <div class="field">
+            <label for="partnerBirthdate">Partner birthdate</label>
+            <input type="date" id="partnerBirthdate" name="partnerBirthdate" required />
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="relationshipStart">Relationship start</label>
+              <input type="date" id="relationshipStart" name="relationshipStart" required />
+            </div>
+            <div class="field">
+              <label for="relationshipEnd">Relationship end</label>
+              <input type="date" id="relationshipEnd" name="relationshipEnd" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="relationshipNotes">Notes</label>
+            <textarea id="relationshipNotes" name="relationshipNotes" rows="2" placeholder="Add optional context"></textarea>
+          </div>
+          <button type="submit" class="primary">Save timeline</button>
+        </form>
+      </section>
+      <section class="panel wide">
+        <h2>Divide-by-two-plus-seven plot</h2>
+        <canvas id="relationshipChart" width="800" height="500"></canvas>
+        <p class="caption">
+          Each point represents the relationship at its starting date. Green points satisfy the rule, red points do not. The guideline boundary is the diagonal line.
+        </p>
+      </section>
+      <section class="panel wide">
+        <h2>Relationship breakdown</h2>
+        <table id="relationshipTable">
+          <thead>
+            <tr>
+              <th>Pair</th>
+              <th>Timeline</th>
+              <th>Status</th>
+              <th>Becomes okay</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
