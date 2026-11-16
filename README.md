@@ -1,13 +1,8 @@
 # Is Dating Her Okay?
 
-An experimental timeline that plots dates and compares them with the age-gap rule of thumb often called “half your age plus seven.”
+I made this prototype to turn a familiar age-gap rule of thumb into something you can inspect over time: add fictional timeline entries and see them plotted against the formula. The timeline and chart make the assumptions visible, but a formula cannot answer questions of consent, safety, or legality. It’s an old experiment; fork it for a safer, better-defined visualization if you have one in mind.
 
 The chart visualizes a formula. It does not establish consent, safety, or legal eligibility. Use fictional dates when trying this older local prototype.
-
-A lightweight web experience that helps partners visualize the classic
-"divide-your-age-by-two-plus-seven" guideline. Sign in with Google on the landing
-page, add your details, and record partner timelines to see whether the
-relationship fit the rule across specific date ranges.
 
 ## Features
 
