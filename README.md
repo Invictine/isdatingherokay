@@ -44,3 +44,14 @@ relationship fit the rule across specific date ranges.
 
 All data is persisted in `data/db.json`. In production you should replace this
 with a real database and verify Google credentials server-side.
+
+## Request flow
+
+```mermaid
+flowchart LR
+  Browser[Landing page and dashboard] -->|Google ID token| API[Node.js server]
+  API -->|Profile and timeline JSON| Store[data/db.json]
+  API -->|Relationship data| Chart[Dashboard timeline chart]
+```
+
+This is an older prototype. The server does not verify Google tokens, JSON storage is not suitable for concurrent production use, and the guideline is only a visualization. It is not a measure of consent, safety, or legal eligibility.
