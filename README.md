@@ -1,6 +1,6 @@
 # Is Dating Her Okay?
 
-I made this prototype to turn a familiar age-gap rule of thumb into something you can inspect over time: add fictional timeline entries and see them plotted against the formula. The timeline and chart make the assumptions visible, but a formula cannot answer questions of consent, safety, or legality. It’s an old experiment; fork it for a safer, better-defined visualization if you have one in mind. Review the setup instructions and architecture below, or fork the repository to adapt the implementation to your requirements.
+I made this prototype to turn a familiar age-gap rule of thumb into something you can inspect over time: add fictional timeline entries and see them plotted against the formula. The timeline and chart make the assumptions visible, but a formula cannot answer questions of consent, safety, or legality. It’s an old experiment; fork it for a safer, better-defined visualization if you have one in mind.
 
 [![Is Dating Her Okay?](media/overview.png)](media/walkthrough.mp4)
 *Click preview above to watch recorded interface demo.*
